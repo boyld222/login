@@ -5,10 +5,72 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myInput");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
+    </script>
   </head>
 
   <body>
-    <div class="bg-neutral-800">haha</div>
+    <section class="section-login">
+      <div class="side-image">
+        <img
+          src="https://images.unsplash.com/photo-1540162875225-3f6b56d69fe8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          alt="photo"
+          class="image"
+        />
+      </div>
+      <div class="form-content">
+        <div class="form-wrapper">
+          <div class="title">
+            <h2>Welcome to Panorama,<br />Sign In To Continue.</h2>
+          </div>
+          <div class="sub-title">
+            <p>
+              Don't have an account?
+              <a href="#" class="link">Create a account</a> <br />
+              It takes less than a minute.
+            </p>
+          </div>
+          <form class="form" action="/">
+            <label class="label-input" for="email">Email:</label>
+            <input id="email" type="text" />
+            <label for="password">Password:</label>
+
+            <input class="label-input" id="password" type="password" />
+
+            <label class="forgot-pass" for="password"
+              ><a href="#" class="link">Forgot Password ?</a></label
+            >
+            <button class="btn-submit">Sign In</button>
+            <button class="btn-submit-google">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+                alt=""
+                class="logo-icon"
+              />
+              Sign In with Google
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
