@@ -38,6 +38,11 @@ body {
 .form-wrapper {
   width: 50%;
 }
+.title {
+  .title-content {
+    font-size: 1.75em;
+  }
+}
 .sub-title {
   margin-bottom: 50px;
 }
